@@ -18,7 +18,8 @@ class _Cadastro_pageState extends State<Cadastro_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Padding(
+        body: SingleChildScrollView(
+            child: Padding(
       padding: const EdgeInsets.only(
         top: 20,
         left: 43,
@@ -253,6 +254,6 @@ class _Cadastro_pageState extends State<Cadastro_page> {
           )
         ],
       ),
-    ));
+    )));
   }
 }

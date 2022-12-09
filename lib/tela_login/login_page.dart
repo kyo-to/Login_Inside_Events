@@ -19,8 +19,9 @@ class _Login_pageState extends State<Login_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(top: 30, left: 25, right: 43),
+      body: SingleChildScrollView( 
+      child: Padding(
+        padding:  EdgeInsets.only(top: 30, left: 25, right: 43),
         child: Column(children: <Widget>[
           SizedBox(
             height: 230,
@@ -228,6 +229,7 @@ class _Login_pageState extends State<Login_page> {
               ))
         ]),
       ),
+      )
     );
   }
 }

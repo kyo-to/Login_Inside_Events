@@ -14,10 +14,11 @@ class Redefinir_page extends StatefulWidget {
 // ignore: camel_case_types
 class _Redefinir_pageState extends State<Redefinir_page> {
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+  Widget build(BuildContext context) => 
+  Scaffold(  
       backgroundColor: const Color.fromARGB(209, 255, 255, 255),
-      body: Padding(
+      body: SingleChildScrollView( 
+        child: Padding(
         padding: const EdgeInsets.only(top: 30, left: 25, right: 43),
         child: Column(children: <Widget>[
           Column(
@@ -151,6 +152,6 @@ class _Redefinir_pageState extends State<Redefinir_page> {
           ),
         ]),
       ),
+      )
     );
-  }
 }
